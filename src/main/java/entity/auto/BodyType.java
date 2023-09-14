@@ -1,4 +1,4 @@
-package entity;
+package entity.auto;
 
 public enum BodyType {
     SUV,

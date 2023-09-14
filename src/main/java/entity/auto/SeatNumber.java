@@ -1,4 +1,4 @@
-package entity;
+package entity.auto;
 
 import java.util.Arrays;
 
@@ -8,7 +8,7 @@ public enum SeatNumber {
     FOUR(4),
     FIVE(5);
 
-    private int number;
+    private final int number;
 
     SeatNumber(int number) {
         this.number = number;
