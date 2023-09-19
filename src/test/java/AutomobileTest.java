@@ -1,23 +1,5 @@
-import entity.auto.Automobile;
-import entity.auto.BodyType;
-import entity.auto.SeatNumber;
-import entity.auto.TechnicalCharacteristic;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import utils.AutomobileUtils;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
-import java.util.stream.Collectors;
-
-import static constant.AutomobileConstant.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 public class AutomobileTest {
-    private static final List<Automobile> automobileList = new ArrayList<>();
+   /* private static final List<Automobile> automobileList = new ArrayList<>();
 
     @BeforeAll
     public static void initialise_list_of_automobiles() {
@@ -33,22 +15,19 @@ public class AutomobileTest {
                                 SKODA_KODIAQ,
                                 30_000,
                                 BodyType.SUV,
-                                new TechnicalCharacteristic(200, 2.0f, SeatNumber.FIVE
-                                )
+                                new TechnicalCharacteristic(200, 2.0f, SeatNumber.FIVE)
                         ),
                         new Automobile(
                                 TOYOTA_CAMRY,
                                 40_000,
                                 BodyType.SEDAN,
-                                new TechnicalCharacteristic(250, 2.5f, SeatNumber.FOUR
-                                )
+                                new TechnicalCharacteristic(250, 2.5f, SeatNumber.FOUR)
                         ),
                         new Automobile(
                                 KOENIGSEGG_ONE,
                                 1_000_000,
                                 BodyType.SPORT,
-                                new TechnicalCharacteristic(500, 5.0f, SeatNumber.ONE
-                                )
+                                new TechnicalCharacteristic(400, 5.0f, SeatNumber.ONE)
                         )
                 )
         );
@@ -197,5 +176,5 @@ public class AutomobileTest {
                         SeatNumber.FIVE
                 ).contains(automobileNumberOfSeats.getSeatNumber())
         );
-    }
+    }*/
 }

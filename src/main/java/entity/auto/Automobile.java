@@ -1,19 +1,19 @@
 package entity.auto;
 
 import constant.AutomobileConstant;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
 public class Automobile {
+    private int id;
     private String brand;
     private int price;
     private BodyType bodyType;
+
     private TechnicalCharacteristic technicalCharacteristic;
 
     public void setPrice(int price) {
