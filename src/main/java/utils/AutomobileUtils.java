@@ -3,6 +3,7 @@ package utils;
 import entity.auto.Automobile;
 import entity.auto.BodyType;
 import entity.auto.SeatNumber;
+import entity.auto.TechnicalCharacteristic;
 
 import java.util.Comparator;
 import java.util.List;
@@ -66,5 +67,10 @@ public class AutomobileUtils {
         } else {
             automobiles.sort(Comparator.comparingInt(Automobile::getPrice).reversed());
         }
+    }
+
+    public static boolean isTechnicalCharacteristicIdValid(List<TechnicalCharacteristic> technicalCharacteristicList, int techId) {
+        return technicalCharacteristicList.stream()
+                .anyMatch(technicalCharacteristic -> technicalCharacteristic.getId() == techId);
     }
 }

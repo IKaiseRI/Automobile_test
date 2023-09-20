@@ -1,5 +1,23 @@
+import entity.auto.Automobile;
+import entity.auto.BodyType;
+import entity.auto.SeatNumber;
+import entity.auto.TechnicalCharacteristic;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+import utils.AutomobileUtils;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
+import java.util.stream.Collectors;
+
+import static constant.AutomobileConstant.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 public class AutomobileTest {
-   /* private static final List<Automobile> automobileList = new ArrayList<>();
+    private static final List<Automobile> automobileList = new ArrayList<>();
 
     @BeforeAll
     public static void initialise_list_of_automobiles() {
@@ -176,5 +194,5 @@ public class AutomobileTest {
                         SeatNumber.FIVE
                 ).contains(automobileNumberOfSeats.getSeatNumber())
         );
-    }*/
+    }
 }

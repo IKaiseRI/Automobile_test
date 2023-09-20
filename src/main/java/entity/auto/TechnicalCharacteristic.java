@@ -18,10 +18,16 @@ public class TechnicalCharacteristic {
     private float engineVolume;
     private SeatNumber seatNumber;
 
+    public TechnicalCharacteristic(int maxSpeed, float engineVolume, SeatNumber seatNumber) {
+        this.maxSpeed = maxSpeed;
+        this.engineVolume = engineVolume;
+        this.seatNumber = seatNumber;
+    }
+
     public void setMaxSpeed(int maxSpeed) {
         if (!isSpeedValid(maxSpeed)) {
             throw new IllegalArgumentException(
-                    ExceptionMessage.getExceptionText("speed", MAX_SPEED, MIN_SPEED)
+                    ExceptionMessage.getCharacteristicExceptionText("speed", MAX_SPEED, MIN_SPEED)
             );
         }
         this.maxSpeed = maxSpeed;
@@ -40,7 +46,7 @@ public class TechnicalCharacteristic {
     public void setEngineVolume(float engineVolume) {
         if (!isEngineVolumeValid(engineVolume)) {
             throw new IllegalArgumentException(
-                    ExceptionMessage.getExceptionText("engine volume", MIN_ENGINE_VOLUME, MAX_ENGINE_VOLUME)
+                    ExceptionMessage.getCharacteristicExceptionText("engine volume", MIN_ENGINE_VOLUME, MAX_ENGINE_VOLUME)
             );
         }
         this.engineVolume = engineVolume;

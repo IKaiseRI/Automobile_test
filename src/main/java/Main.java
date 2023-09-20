@@ -1,13 +1,8 @@
-import constant.CsvPathConstant;
-import entity.auto.TechnicalCharacteristic;
-import utils.CsvUtils;
-
-import java.util.List;
+import utils.DbUtils;
 
 public class Main {
     public static void main(String[] args) {
-        List<TechnicalCharacteristic> techCharacteristics = CsvUtils.readTechnicalCharacteristicCsv(CsvPathConstant.TECHNICAL_CHARACTERISTIC_CSV_PATH);
-
-        techCharacteristics.forEach(System.out::println);
+       // Triggers the reading from the CSV files and inserts into DB
+        DbUtils.insertIntoDatabase();
     }
 }

@@ -14,6 +14,10 @@ public enum SeatNumber {
         this.number = number;
     }
 
+    public int getValue() {
+        return number;
+    }
+
     public static SeatNumber getSeatNumberFromInteger(int numberOfSeats) {
         return Arrays.stream(SeatNumber.values())
                 .filter(seatNumber -> seatNumber.number == numberOfSeats)
